@@ -1,4 +1,4 @@
-import random
+import random as rnd
 logo = """
 .------.            _     _            _    _            _    
 |A_  _ |.          | |   | |          | |  (_)          | |   
@@ -19,8 +19,7 @@ ace ="""
   __  
  |A  | 
  | /\| 
- |_\/| 
- """
+ |_\/| """
 
 two = """ 
   ___  
@@ -104,5 +103,5 @@ cards = {
     7: seven,
     8: eight,
     9: nine,
-    10: [ten, jack, queen, king],
+    10: rnd.choice([ten, jack, queen, king])
 }
